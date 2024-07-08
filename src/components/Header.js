@@ -3,12 +3,12 @@ import Logo from "./Logo.js";
 function Header(){
      
     return(
-     <header>
+     <header className="header">
           <nav>
                <Logo/>
                <ul>
-                    <li>Accueil</li>
-                    <li>A Propos</li>
+                    <li><a href="/">Accueil</a></li>
+                    <li><a href="/Propos">A Propos</a></li>
 
                </ul>
           </nav>          
