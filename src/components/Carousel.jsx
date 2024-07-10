@@ -12,8 +12,8 @@ function Carousel({imgSource , imgAlt}){
 
     return(
         <>
-         <button onClick={imgNext}>next</button>
-         <button onClick={imgPrev}>prev</button>
+         <button onClick={imgNext} style={ imgSource.length <= 1  ? { display:'none'} : {}}>next</button>
+         <button onClick={imgPrev} style={ imgSource.length <= 1  ? { display:'none'} : {}}>prev</button>
          <h2>{imageIndex+1}/{imgSource.length}</h2>
          <img src={imgSource[imageIndex]} alt={imgAlt} ></img>
         
