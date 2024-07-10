@@ -1,10 +1,10 @@
-import CardsData from '../logements.json'
+import Data from '../logements.json'
 
 
 function RenderCards (){
 return(
     <section className='home_gallery'>
-        {CardsData.map(card => {
+        {Data.items.map(card => {
             return(
                     
                         <figure key={card.id}>
