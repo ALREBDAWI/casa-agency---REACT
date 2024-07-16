@@ -30,12 +30,17 @@ body {
 
 }
 
-ul{
-    list-style: none;
-}
-
 a{
     text-decoration: none;
+}
+
+a:visited{
+    text-decoration: none;
+    color: initial;
+}
+
+ul{
+    list-style: none;
 }
     
 header{
@@ -48,6 +53,13 @@ header{
 
     img{
         width: 210px;
+    }
+
+
+    .active{
+        text-decoration: underline;
+        
+
     }
 }
 
@@ -72,11 +84,7 @@ nav{
     }
 }
 
-// .home_container{
 
-//     height: 500px;
-//     background-color: gray;
-// }
 
 footer{
 

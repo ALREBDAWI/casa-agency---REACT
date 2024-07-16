@@ -4,7 +4,7 @@
 }
 .about .item {
   border-radius: 5px;
-  margin-top: 30px;
+  margin-top: 15px;
 }
 
 .title {
@@ -22,10 +22,11 @@
   font-size: 24px;
 }
 .title .arrow.open {
+  transform: rotate(-180deg);
   transition: transform 0.4s ease;
 }
 .title .arrow.closed {
-  transform: rotate(180deg);
+  transition: transform 0.4s ease;
 }
 
 .content.hide {
@@ -33,7 +34,7 @@
   opacity: 0;
   overflow: hidden;
   padding: 0 15px;
-  transition: max-height 0.5s ease, opacity 0.5s ease, padding 0.5s ease;
+  transition: max-height 0.3s ease, opacity 0.3s ease, padding 0.3s ease;
 }
 
 .content.show {
@@ -42,7 +43,7 @@
   margin-top: 0;
   padding: 15px;
   background-color: #F6F6F6;
-  transition: max-height 0.5s ease, opacity 0.5s ease, padding 0.5s ease, margin-top 0.5s ease;
+  transition: max-height 0.3s ease, opacity 0.3s ease, padding 0.3s ease;
 }
 
 .cardDetailsContainer .collapseContainer, .cardDetailsContainer .secondContainer .stars_rating, .cardDetailsContainer .secondContainer ul, .cardDetailsContainer .secondContainer, .cardDetailsContainer .firstContainer .ownerData, .cardDetailsContainer .firstContainer {
@@ -179,12 +180,17 @@ body {
   flex-grow: 1;
 }
 
-ul {
-  list-style: none;
-}
-
 a {
   text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+  color: initial;
+}
+
+ul {
+  list-style: none;
 }
 
 header {
@@ -195,6 +201,9 @@ header {
 }
 header img {
   width: 210px;
+}
+header .active {
+  text-decoration: underline;
 }
 
 nav {
