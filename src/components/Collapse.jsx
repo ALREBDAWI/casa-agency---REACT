@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import arrow from '../assets/Vector.png';
+import arrow from '../assets/collapseArow.png';
 
 function Collapse( {title , message , classname } ) {
     const [selected, setSelected] = useState(null);
@@ -22,10 +22,10 @@ function Collapse( {title , message , classname } ) {
                                 className={`arrow ${selected ? 'open' : 'closed' }`}
                             />
                         </div>
-                        <p className={`content ${selected  ? 'show' : 'hide'}`}>
+                        <div className={`content ${selected  ? 'show' : 'hide'}`}>
                             {message}
                 
-                        </p>
+                        </div>
                     </div>
              
             </div>

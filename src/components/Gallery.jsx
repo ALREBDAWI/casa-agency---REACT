@@ -8,7 +8,7 @@ return(
             return(
                     
                         <figure key={card.id}>
-                            <a href={`caroussel/${card.id}`} ><img src={card.cover}></img></a>
+                            <a href={`Fiche-Logement/${card.id}`} ><img src={card.cover}></img></a>
                             <p> {card.title} </p>
 
                         </figure>

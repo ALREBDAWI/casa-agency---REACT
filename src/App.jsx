@@ -20,10 +20,11 @@ const App =()=>{
             <main>
                 <div className="home_container">
                 <Routes>
+                    <Route path="*" element={<Error />} />
                     <Route path="/" element={<HomeMain />} />
                     <Route path="/Propos" element={<Propos />} />
-                    <Route path="caroussel/:id" element={<CardDetails/>}/>
-                    <Route path="*" element={<Error />} />
+                    <Route path="Fiche-Logement/:id" element={<CardDetails/>}/>
+                    <Route path="/error" element={<Error />} />
                 </Routes>
                 </div>
             </main>

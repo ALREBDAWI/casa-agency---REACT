@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import slideArrow from '../assets/sliderArow.png'
 
 function Carousel({imgSource , imgAlt}){
 
@@ -12,10 +13,11 @@ function Carousel({imgSource , imgAlt}){
 
     return(
         <>
-         <button onClick={imgNext} style={ imgSource.length <= 1  ? { display:'none'} : {}}>next</button>
-         <button onClick={imgPrev} style={ imgSource.length <= 1  ? { display:'none'} : {}}>prev</button>
-         <h2>{imageIndex+1}/{imgSource.length}</h2>
-         <img src={imgSource[imageIndex]} alt={imgAlt} ></img>
+
+         <img src={imgSource[imageIndex]} alt={imgAlt} className="mainSliderImg"></img>
+         <div onClick={imgNext} style={ imgSource.length <= 1  ? { display:'none'} : {}}><img src={slideArrow} className="slideNext"></img></div>
+         <div onClick={imgPrev} style={ imgSource.length <= 1  ? { display:'none'} : {}}><img src={slideArrow} className="slidePrev"></img></div>
+         <div className='counter' style={ imgSource.length === 1 ? { display:'none'} :{}}><p >{imageIndex+1}/{imgSource.length}</p></div>
         
         </>
     )

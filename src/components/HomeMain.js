@@ -7,7 +7,7 @@ function HomeMain(){
         <main className="home_container">
             <Banner 
                 img = {img}
-                title = {'chez vous'}
+                title = {'Chez vous, partout et ailleurs'}
             />
             <section className="gallery_wrapper">
              <RenderCards />    

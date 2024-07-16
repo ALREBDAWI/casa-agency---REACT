@@ -1,4 +1,4 @@
-import acvtiveStar from '../assets/active_star.png'
+import acvtiveStar from '../assets/star-active 2.png'
 import inactiveStar from '../assets/star-inactive.png'
 
 function Rating ({ratingValue}) {

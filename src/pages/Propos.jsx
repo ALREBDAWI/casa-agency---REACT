@@ -1,6 +1,6 @@
 import Collapse from "../components/Collapse";
 import Banner from "../components/Banner";
-import img from '../assets/banner_img.png'
+import img from '../assets/Image source 2.png'
 
 
 const Propos =  () => {
