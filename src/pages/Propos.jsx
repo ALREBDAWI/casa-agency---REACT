@@ -33,7 +33,7 @@ const Propos =  () => {
             <section>
                 <Banner img={img}  />
             </section>
-            <section>
+            <section className="collapse">
                 {items.map((item) => <Collapse key={item.id} classname={'about'} title={item.title}
                 message={item.content} />)}
             </section>
