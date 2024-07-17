@@ -3,7 +3,7 @@ function Tags({tagsSource}){
     return(
         <>
             <ul>        
-                {tagsSource.map((tag) => (<li>{tag}</li>) )}
+                {tagsSource.map((tag , index) => (<li key={index} >{tag}</li>) )}
             </ul>
         </>
     )

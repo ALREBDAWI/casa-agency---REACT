@@ -10,11 +10,11 @@ function Rating ({ratingValue}) {
     const stars = [];
 
     for(let i=0 ; i < filledStars ; i++ ){
-        stars.push(<img className='star' src={acvtiveStar}></img>)
+        stars.push(<img key={`filled-${i}`} className='star' src={acvtiveStar}></img>)
     }
 
     for( let i=0 ; i < emptyStars ; i++){
-        stars.push(<img className='star' src={inactiveStar}></img>)
+        stars.push(<img key={`empty-${i}`} className='star' src={inactiveStar}></img>)
     }
 
     return(

@@ -1,0 +1,177 @@
+
+
+
+
+
+@media screen and (max-width: 480px) {
+
+
+
+
+    header{
+
+        align-items: center;
+        // border: solid 2px rgb(11, 10, 12) ;
+    
+
+        nav{
+
+            gap: 20px;
+            // border: solid 2px blueviolet ;
+
+
+            ul{
+
+                width: fit-content;
+                gap: 10px;
+                align-items: center;
+
+                // border: solid 2px rgb(255, 136, 0) ;
+
+            }
+
+            img{
+                width: 120px;
+            }
+        }
+
+    
+    
+        .active{
+            text-decoration: underline;
+            
+    
+        }
+    }
+
+    .cardDetailsContainer {
+
+        width: 90%; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        
+        .imgSlider{
+
+            width: 100%;
+
+            .mainSliderImg {
+                height: 250px;
+            }
+
+            .slideNext{
+
+                right: 50px ;
+                height: 20 px;
+                width: 12 px;
+                position: absolute;
+                top: 50%;
+                padding: 15px;
+                cursor: pointer;
+        
+            }
+    
+            .slidePrev{
+    
+                left: 50px;
+                rotate: 180deg ;
+                height: 20 px;
+                width: 50 px;
+                position: absolute;
+                top: 50%;
+                padding: 15px;
+                cursor: pointer;
+            }
+
+        } 
+        
+
+
+
+
+
+
+        .imgSlider .counter {
+            bottom: 100px;
+        }
+
+
+        .upperContainer{
+
+            display: flex;
+            flex-direction: column;
+            // align-items: center;
+            height: fit-content;
+            width: 100%;
+
+            ul{
+                width: 100%;
+                margin-bottom: 20px;
+                height: fit-content;
+            
+            }
+
+            .ownerData{
+
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: space-between;
+                width: 100%;
+
+            }
+        }
+    
+        .collapseContainer{
+    
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 100%;
+            // border: solid 2px red ;
+    
+            div{
+                // width: 100%;
+                
+            }
+        }    
+
+    }
+    body{
+
+        .home_container{
+
+            .gallery_wrapper{
+
+                width: 100%;
+                background-color: transparent;
+    
+                .home_gallery{
+    
+    
+                display: grid;
+                grid-template-columns: repeat( 1 , 1fr) ;
+
+                figure{
+                    width: 100%;
+   
+                }
+            
+                }
+            }   
+            
+            .about{
+
+                width: 100%;
+            }
+    
+        }
+
+    }
+
+
+
+
+    
+
+}

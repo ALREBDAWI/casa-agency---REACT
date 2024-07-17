@@ -22,21 +22,26 @@ if(!item){
             <div className="imgSlider">
                 < Carousel imgSource={item.pictures} imgAlt={`image de ${item.title}`} />
             </div>
-
+        <div className="upperContainer">
             <div className="firstContainer">
-                <span>                
+                <div>                
                     <h1>{item.title}</h1>
                     <p> {item.location} </p>
-                </span>
-                <span className="ownerData">
+                    <div className="tagContainer">
+                    <Tags tagsSource={item.tags} />
+                    </div>
+                </div>
+
+            </div>
+            <div className="ownerData">
+                <div className="imgAndName">
                     < OwnerData ownerName={item.host.name} ownerImg={item.host.picture} />
-                </span>
+                </div>
+                    <Rating ratingValue={item.rating} />
+
             </div>
-            
-            <div className="secondContainer">
-                <Tags tagsSource={item.tags} />
-                <Rating ratingValue={item.rating} />
-            </div>
+        </div>
+
             <div className="collapseContainer">
                 <div>
                     <Collapse title={'descreption'} message={item.description} />

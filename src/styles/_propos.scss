@@ -44,7 +44,7 @@
         opacity: 0;
         overflow: hidden;
         padding: 0 15px; // Side padding to prevent content from "jumping"
-        transition: max-height 0.3s ease, opacity 0.3s ease, padding 0.3s ease; // Smooth transition for padding
+        transition: min-height 0.3s ease-in-out, opacity 0.3s ease, padding 0.3s ease; // Smooth transition for padding
     }
     
     .content.show {
@@ -54,5 +54,5 @@
 
         padding: 15px; // Padding to be consistent with .content, but active in this state
         background-color: $background-color; // Ensure background-color transition if necessary
-        transition: max-height 0.3s ease, opacity 0.3s ease, padding 0.3s ease ; // Combined transitions
+        transition: max-height 0.3s ease-in-out, opacity 0.3s ease, padding 0.3s ease ; // Combined transitions
     }
