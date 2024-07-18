@@ -1,13 +1,16 @@
-.about {
+.home_container .bannerProbos .banner img {
+  opacity: 80%;
+  filter: brightness(60%);
+}
+.home_container .about {
   width: 1023px;
   padding: 10px;
 }
-.about .item {
+.home_container .about .item {
   border-radius: 5px;
   margin-top: 15px;
 }
-
-.title {
+.home_container .title {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -18,26 +21,24 @@
   height: 50px;
   cursor: pointer;
 }
-.title h2 {
+.home_container .title h2 {
   font-size: 24px;
 }
-.title .arrow.open {
+.home_container .title .arrow.open {
   transform: rotate(-180deg);
   transition: transform 0.4s ease;
 }
-.title .arrow.closed {
+.home_container .title .arrow.closed {
   transition: transform 0.4s ease;
 }
-
-.content.hide {
+.home_container .content.hide {
   max-height: 0;
   opacity: 0;
   overflow: hidden;
   padding: 0 15px;
   transition: min-height 0.3s ease-in-out, opacity 0.3s ease, padding 0.3s ease;
 }
-
-.content.show {
+.home_container .content.show {
   max-height: 9999px;
   opacity: 1;
   margin-top: 0;
@@ -91,7 +92,7 @@
   width: fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  bottom: 140px;
+  bottom: 35px;
   left: 50%;
 }
 .cardDetailsContainer .imgSlider .counter p {
@@ -306,6 +307,24 @@
   body .home_container .collapse .about div {
     font-size: 12px;
   }
+  body .home_container .error_wrapper {
+    height: 75vh;
+  }
+  body .home_container .error_wrapper img {
+    height: 100px;
+  }
+  body .home_container .error_wrapper p {
+    font-size: 18px;
+    font-weight: 500px;
+    text-align: center;
+  }
+  body .home_container .error_wrapper a {
+    text-decoration: underline;
+    font-size: 14px;
+  }
+  body .home_container .content.show {
+    font-size: 12px;
+  }
 }
 * {
   box-sizing: border-box;
@@ -327,7 +346,6 @@ body {
 .wrapper {
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
 }
 
 a {
@@ -381,6 +399,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 30px;
 }
 footer p {
   color: white;

@@ -30,8 +30,8 @@ const Propos =  () => {
 
     return(
             <>
-            <section>
-                <Banner img={img}  />
+            <section className='bannerProbos' >
+                <Banner img={img} className='bannerImgProbos' />
             </section>
             <section className="collapse">
                 {items.map((item) => <Collapse key={item.id} classname={'about'} title={item.title}

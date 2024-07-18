@@ -2,6 +2,23 @@
 
 
 
+.home_container{
+
+    .bannerProbos{
+
+        .banner{
+
+            img{
+
+                opacity: 80%;
+                filter: brightness(60%);
+            }
+        }
+
+
+
+    }
+
     .about {
         width: 1023px;
         padding: 10px;
@@ -9,6 +26,7 @@
         .item {
             border-radius: 5px;
             margin-top: 15px;
+            
         }
     }
 
@@ -56,3 +74,10 @@
         background-color: $background-color; // Ensure background-color transition if necessary
         transition: max-height 0.3s ease-in-out, opacity 0.3s ease, padding 0.3s ease ; // Combined transitions
     }
+
+
+
+} 
+          
+        
+    
