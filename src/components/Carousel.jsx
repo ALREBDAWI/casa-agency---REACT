@@ -15,8 +15,8 @@ function Carousel({imgSource , imgAlt}){
         <>
 
          <img src={imgSource[imageIndex]} alt={imgAlt} className="mainSliderImg"></img>
-         <div onClick={imgNext} style={ imgSource.length <= 1  ? { display:'none'} : {}}><img src={slideArrow} className="slideNext"></img></div>
-         <div onClick={imgPrev} style={ imgSource.length <= 1  ? { display:'none'} : {}}><img src={slideArrow} className="slidePrev"></img></div>
+         <div onClick={imgNext} style={ imgSource.length <= 1  ? { display:'none'} : {}}><img src={slideArrow} className="slideNext" alt="image Suivante" ></img></div>
+         <div onClick={imgPrev} style={ imgSource.length <= 1  ? { display:'none'} : {}}><img src={slideArrow} className="slidePrev" alt="image précédente" ></img></div>
          <div className='counter' style={ imgSource.length === 1 ? { display:'none'} :{}}><p >{imageIndex+1}/{imgSource.length}</p></div>
         
         </>

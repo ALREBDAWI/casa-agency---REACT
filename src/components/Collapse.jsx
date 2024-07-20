@@ -20,6 +20,7 @@ function Collapse( {title , message , classname } ) {
                             <img
                                 src={arrow}
                                 className={`arrow ${selected ? 'open' : 'closed' }`}
+                                alt="flèche"
                             />
                         </div>
                         <div className={`content ${selected  ? 'show' : 'hide'}`}>
