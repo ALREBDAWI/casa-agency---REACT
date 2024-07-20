@@ -1,5 +1,5 @@
 
-import HomeMain from "../components/HomeMain.js";
+import HomeMain from "../components/HomeMain.jsx";
 
 function Main (){
     return(
