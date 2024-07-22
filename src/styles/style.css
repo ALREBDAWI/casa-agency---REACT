@@ -97,7 +97,7 @@
 }
 .cardDetailsContainer .imgSlider .counter p {
   color: #F6F6F6;
-  margin: 0px;
+  margin: 0;
 }
 .cardDetailsContainer .imgSlider .counterHide {
   display: none;
@@ -117,11 +117,11 @@
   background-color: #FF6060;
 }
 .cardDetailsContainer .upperContainer .firstContainer h1 {
-  margin: 0px;
+  margin: 0;
   color: #FF6060;
 }
 .cardDetailsContainer .upperContainer .firstContainer p {
-  margin: 5px 0px 15px;
+  margin: 5px 0 15px;
 }
 .cardDetailsContainer .upperContainer .ownerData {
   display: flex;
@@ -165,16 +165,19 @@
 @media screen and (max-width: 480px) {
   header {
     align-items: center;
+    /* border: solid 2px rgb(11, 10, 12); */
     margin: 0px;
   }
   header nav {
     gap: 20px;
+    /* border: solid 2px blueviolet; */
   }
   header nav ul {
     width: -moz-fit-content;
     width: fit-content;
     gap: 15px;
     align-items: center;
+    /* border: solid 2px rgb(255, 136, 0); */
   }
   header nav ul li {
     font-size: 13px;
@@ -224,6 +227,7 @@
   .cardDetailsContainer .upperContainer {
     display: flex;
     flex-direction: column;
+    /* align-items: center; */
     height: -moz-fit-content;
     height: fit-content;
     width: 100%;
@@ -268,6 +272,7 @@
     flex-direction: column;
     gap: 20px;
     width: 100%;
+    /* border: solid 2px red; */
   }
   .cardDetailsContainer .collapseContainer h2 {
     font-size: 13px;
@@ -315,7 +320,7 @@
   }
   body .home_container .error_wrapper p {
     font-size: 18px;
-    font-weight: 500px;
+    font-weight: 500;
     text-align: center;
   }
   body .home_container .error_wrapper a {
@@ -350,6 +355,7 @@ body {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 a:visited {
@@ -359,15 +365,15 @@ a:visited {
 
 ul {
   list-style: none;
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
 }
 
 header {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin: 20px 0px;
+  margin: 20px 0;
 }
 header img {
   width: 210px;
@@ -381,7 +387,7 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 68 px;
+  height: 68px;
   width: 85vw;
 }
 nav ul {
@@ -436,14 +442,14 @@ footer p {
   text-align: center;
   font-size: 48px;
   font-weight: 700;
-  text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000, 1px 0px 0 #000, -1px 0px 0 #000, 0px 1px 0 #000, 0px -1px 0 #000;
+  text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000, 1px 0 0 #000, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .home_container .gallery_wrapper {
   width: 85vw;
   background-color: #F6F6F6;
   border-radius: 25px;
-  margin: 40px 0px;
+  margin: 40px 0;
   padding: 40px;
 }
 .home_container .gallery_wrapper .home_gallery {
@@ -455,7 +461,7 @@ footer p {
   position: relative;
   width: 1fr;
   height: 340px;
-  margin: 0px;
+  margin: 0;
 }
 .home_container .gallery_wrapper .home_gallery figure .gradiant {
   position: absolute;
@@ -463,9 +469,9 @@ footer p {
   left: 0;
   width: 100%;
   height: 100%;
-  border-radius: 10px;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0) 25%, rgba(10, 10, 10, 0) 50%, rgba(4, 4, 4, 0.205) 75%, rgba(0, 0, 0, 0.5) 100%);
   pointer-events: none;
+  border-radius: 25px;
 }
 .home_container .gallery_wrapper .home_gallery figure img {
   width: 100%;
@@ -475,7 +481,7 @@ footer p {
   padding: 0;
   position: absolute;
   width: 50%;
-  bottom: 0px;
+  bottom: 0;
   left: 10px;
   color: white;
   font-size: 18px;
@@ -497,7 +503,7 @@ footer p {
   width: -moz-fit-content;
   width: fit-content;
   font-size: 36px;
-  font-weight: 500px;
+  font-weight: 500;
   color: #FF6060;
 }
 .error_wrapper a {

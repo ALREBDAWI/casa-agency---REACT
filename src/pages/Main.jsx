@@ -1,16 +1,12 @@
+import React from 'react';
+import HomeMain from '../components/HomeMain';
 
-import HomeMain from "../components/HomeMain.jsx";
-
-function Main (){
-    return(
-
-        <body>
-
+const Main = () => {
+    return (
+        <div>
             <HomeMain />
-
-        </body>
-
-    )
+        </div>
+    );
 };
 
-export default Main
+export default Main;

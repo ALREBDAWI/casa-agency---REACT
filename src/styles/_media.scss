@@ -1,134 +1,95 @@
-
-
-
-
-
 @media screen and (max-width: 480px) {
 
-
-
-
-    header{
-
+    header {
         align-items: center;
-        // border: solid 2px rgb(11, 10, 12) ;
+        /* border: solid 2px rgb(11, 10, 12); */
         margin: 0px;
-     
-    
 
-        nav{
-
+        nav {
             gap: 20px;
-            // border: solid 2px blueviolet ;
+            /* border: solid 2px blueviolet; */
 
-
-            ul{
-
+            ul {
                 width: fit-content;
                 gap: 15px;
                 align-items: center;
-
-                // border: solid 2px rgb(255, 136, 0) ;
-                li{
+                /* border: solid 2px rgb(255, 136, 0); */
+                
+                li {
                     font-size: 13px;
                     line-height: 17px;
                 }
             }
 
-            img{
+            img {
                 width: 120px;
             }
         }
 
-    
-    
-        .active{
+        .active {
             text-decoration: underline;
-            
-    
         }
     }
 
     .cardDetailsContainer {
-
-        width: 90%; 
+        width: 90%;
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 20px;
-        
-        .imgSlider{
 
+        .imgSlider {
             width: 100%;
             position: relative;
 
             .mainSliderImg {
                 height: 250px;
-
-
-
             }
-                .slideNext{
 
-                    right: 20px ;
-                    width: 6%;
-                    top: 110px;
-                    height: auto;
-                    position: absolute;
-            
-                }
-        
-                .slidePrev{
-        
-                    left: 20px;
-                    rotate: 180deg ;
-                    width: 6%;
-                    top: 110px;
-                    cursor: pointer;
-                    position: absolute;
+            .slideNext {
+                right: 20px;
+                width: 6%;
+                top: 110px;
+                height: auto;
+                position: absolute;
+            }
 
-                }
+            .slidePrev {
+                left: 20px;
+                rotate: 180deg;
+                width: 6%;
+                top: 110px;
+                cursor: pointer;
+                position: absolute;
+            }
 
-                .counter{
-                    display: none;
-                }
+            .counter {
+                display: none;
+            }
 
-
-        } 
-        
-
-
-
-
-
-
-        .imgSlider .counter {
-            bottom: 100px;
+            .counter {
+                bottom: 100px;
+            }
         }
 
-
-        .upperContainer{
-
+        .upperContainer {
             display: flex;
             flex-direction: column;
-            // align-items: center;
+            /* align-items: center; */
             height: fit-content;
             width: 100%;
 
-            .tagContainer{
-
+            .tagContainer {
                 max-width: 100%;
                 height: fit-content;
                 margin-bottom: 20px;
 
-                ul{
-
+                ul {
                     display: flex;
                     flex-wrap: wrap;
                     row-gap: 10px;
-                    
 
-                    li{
+                    li {
                         max-height: 30px;
                         min-width: fit-content;
                         font-size: 12px;
@@ -136,133 +97,107 @@
                 }
             }
 
-            .ownerData{
-
+            .ownerData {
                 display: flex;
                 flex-direction: row-reverse;
                 justify-content: space-between;
                 align-items: center;
                 width: 100%;
 
-                .stars_rating{
+                .stars_rating {
                     height: fit-content;
                 }
 
-                .ownerImg{
+                .ownerImg {
                     width: 32px;
                     height: 32px;
                 }
 
-                p{
+                p {
                     font-size: 12px;
-                    
                 }
-
             }
         }
-    
-        .collapseContainer{
-    
+
+        .collapseContainer {
             display: flex;
             flex-direction: column;
             gap: 20px;
             width: 100%;
-            // border: solid 2px red ;
-    
-            
-            h2{
+            /* border: solid 2px red; */
 
+            h2 {
                 font-size: 13px;
                 line-height: 18px;
                 font-weight: 700;
             }
-        }    
-
+        }
     }
-    body{
 
-        .home_container{
-
+    body {
+        .home_container {
             width: 100%;
 
-            .gallery_wrapper{
-
+            .gallery_wrapper {
                 width: 100%;
                 background-color: transparent;
-    
-                .home_gallery{
-    
-    
-                display: grid;
-                grid-template-columns: repeat( 1 , 1fr) ;
-                width: 100%;
-                
-                    figure{
+
+                .home_gallery {
+                    display: grid;
+                    grid-template-columns: repeat(1, 1fr);
                     width: 100%;
-                    height: 255px;
-   
+
+                    figure {
+                        width: 100%;
+                        height: 255px;
                     }
-            
                 }
             }
-            
-            .collapse{
 
+            .collapse {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
 
-                
-                .about{
-
+                .about {
                     width: 90%;
 
-                    h2{
+                    h2 {
                         font-size: 13px;
                     }
 
-                    img{
+                    img {
                         width: 6%;
                     }
 
-                    div{
+                    div {
                         font-size: 12px;
                     }
-    
                 }
             }
 
-            .error_wrapper{
+            .error_wrapper {
                 height: 75vh;
-    
-                img{
 
+                img {
                     height: 100px;
-
                 }
-            
-                p{
+
+                p {
                     font-size: 18px;
-                    font-weight: 500px;
+                    font-weight: 500;
                     text-align: center;
-
                 }
-            
-                a{
+
+                a {
                     text-decoration: underline;
                     font-size: 14px;
-
                 }
-    
             }
-            
-            .content.show{
+
+            .content.show {
                 font-size: 12px;
             }
-    
         }
-
     }
-
-
 }

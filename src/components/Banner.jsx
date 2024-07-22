@@ -1,12 +1,12 @@
+import React from 'react';
 
-function Banner ({img , title , className}){
-    return(
-        <div className='banner'>
-            <img src={img} className={className} alt="image de banner"></img>
-            { !title ? '' : <p> {title}</p> }
-
+const Banner = ({ img, title, className }) => {
+    return (
+        <div className="banner">
+            <img src={img} className={className} alt="Banner" />
+            {title && <p>{title}</p>}
         </div>
-    )
-}
+    );
+};
 
-export default Banner
+export default Banner;

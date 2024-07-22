@@ -1,15 +1,12 @@
+import React from 'react';
 
-function OwnerData ({ownerName , ownerImg}){
-
-    return(
+const OwnerData = ({ ownerName, ownerImg }) => {
+    return (
         <>
-
-            <p className="ownerName"> {ownerName} </p>
-            <img src={ownerImg} className="ownerImg" ></img>
-
+            <p className="ownerName">{ownerName}</p>
+            <img src={ownerImg} className="ownerImg" alt="image du propriétaire" />
         </>
-    )
-
-}
+    );
+};
 
 export default OwnerData;
