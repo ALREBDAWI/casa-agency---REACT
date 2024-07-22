@@ -5,9 +5,9 @@ function Main (){
     return(
 
         <body>
-            {/* <Header/> */}
+
             <HomeMain />
-            {/* <Footer /> */}
+
         </body>
 
     )

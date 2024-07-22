@@ -10,7 +10,6 @@ function Collapse( {title , message , classname } ) {
     };
 
     return (
-        // <div className="propos_wrapper">
 
             <div className={classname}>
               

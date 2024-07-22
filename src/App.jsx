@@ -34,20 +34,6 @@ const App =()=>{
         </div>
     </BrowserRouter>
 
-
-/* <>
-<BrowserRouter>
-<Header />
-<Routes>
-    <Route path="/" element={<HomeMain />} />
-    <Route path="/fiche_logement" element={<HabitatFile />} />
-    <Route path="/Propos" element={<Propos />} />
-    <Route path="*" element={<Error />} />
-
-</Routes>
-<Footer />
-</BrowserRouter>
-</> */
     );
 };
    

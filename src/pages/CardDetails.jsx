@@ -44,7 +44,7 @@ if(!item){
 
             <div className="collapseContainer">
                 <div>
-                    <Collapse title={'descreption'} message={item.description} />
+                    <Collapse title={'Description'} message={item.description} />
                 </div>
                 <div>
                     <Collapse title={'Équipements'} message={<ul> {item.equipments.map((equipment,index) => (<li key={index}>{equipment}</li>) )} </ul>} /> 
