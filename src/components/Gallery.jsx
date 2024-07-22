@@ -8,6 +8,7 @@ return(
             return(
                     
                         <figure key={card.id}>
+                            <div className='gradiant'></div>
                             <a href={`Fiche-Logement/${card.id}`} ><img src={card.cover}></img></a>
                             <p> {card.title} </p>
 
